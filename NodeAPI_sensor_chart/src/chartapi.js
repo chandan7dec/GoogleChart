@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
 
+//var app = express();
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.get('/', function (req, res) {
     fs = require('fs')
     fs.readFile('binary1.bin', 'utf8', function (err, data) {
@@ -64,6 +71,8 @@ app.get("/chart", function (req, resp) {
         resp.end();
     });
 })
+
+
 
 
 
