@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/', function (req, res) {
     fs = require('fs')
-    fs.readFile('binary.bin', 'utf8', function (err, data) {
+    fs.readFile('binary1.bin', 'utf8', function (err, data) {
         if (err) {
             return console.log(err);
         }
