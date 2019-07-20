@@ -1,0 +1,8 @@
+How to run the application.
+Step 1: Donwload the GoogleChartfolder
+Step 2: Go to the src folder
+Step 3: Run the command > node chrtapi.js
+Step 4: Open the GoogleChart1.html in browser
+Chart will be renderd in the browser.
+
+Note: Node should be installed on the machine.
